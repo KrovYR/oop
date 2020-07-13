@@ -24,6 +24,11 @@ int main(int argc, char* argv[])
 		cout << ARGUMENTS_ERROR_TEXT << endl;
 		return ARGUMENTS_ERROR;
 	}
+	else if (argv[1] == argv[2])
+	{
+		cout << ARGUMENTS_ERROR_TEXT << endl;
+		return ARGUMENTS_ERROR;
+	}
 
 	ifstream inputFile;
 	inputFile.open(argv[1], ios::binary);
